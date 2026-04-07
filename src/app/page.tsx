@@ -69,8 +69,8 @@ export default function HomePage() {
           {/* Background */}
           <div className="absolute inset-0 z-0 bg-noir-950">
             <Image
-              src="/images/brand/logo-branding.jpg"
-              alt="Major Chow Restaurant"
+              src="/images/gallery/interior-main.jpg"
+              alt="Major Chow Restaurant interior"
               fill
               priority
               className="object-cover object-center opacity-60"
