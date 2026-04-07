@@ -22,6 +22,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathname = usePathname();
 
+  async function handleSignOut() {
+    await fetch("/api/admin-logout", { method: "POST" });
+    window.location.href = "/admin/login";
+  }
+
   const isActive = (href: string, exact?: boolean) =>
     exact ? pathname === href : pathname.startsWith(href) && (href !== "/admin" || pathname === "/admin");
 
@@ -75,7 +80,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <ChevronRight size={14} className="rotate-180" />
             <span className="font-body text-[0.65rem] uppercase tracking-[0.15em]">View Website</span>
           </Link>
-          <button className="flex items-center gap-3 px-3 py-2 text-red-400/70 hover:text-red-400 transition-colors w-full">
+          <button onClick={handleSignOut} className="flex items-center gap-3 px-3 py-2 text-red-400/70 hover:text-red-400 transition-colors w-full">
             <LogOut size={14} strokeWidth={1.5} />
             <span className="font-body text-[0.65rem] uppercase tracking-[0.15em]">Sign Out</span>
           </button>
