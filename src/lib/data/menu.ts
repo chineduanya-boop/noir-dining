@@ -1,0 +1,436 @@
+import type { MenuItem } from "@/types";
+
+// Prices in Nigerian Naira (₦)
+export const menuItems: MenuItem[] = [
+  // ── African Mains ──────────────────────────────────────────────
+  {
+    id: "af1",
+    name: "Signature Jollof Rice",
+    description:
+      "Party-style smoky jollof rice with chicken, served with fried plantains and boiled eggs",
+    price: 4500,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    image: "/images/food/jollof-rice.jpg",
+    allergens: ["eggs"],
+  },
+  {
+    id: "af2",
+    name: "Major Chow Stew Plate",
+    description:
+      "Slow-cooked beef stew in rich tomato & pepper sauce, served with fried yam chips and sweet plantains",
+    price: 5500,
+    category: "mains",
+    dietary: ["halal", "gluten-free"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    image: "/images/food/stew-plate.jpg",
+    allergens: [],
+  },
+  {
+    id: "af3",
+    name: "Fried Chicken & Chips",
+    description:
+      "Crispy seasoned fried chicken with golden fries and coleslaw, our most-loved classic",
+    price: 4000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten"],
+    variants: [
+      { id: "v-fc1", name: "2 Pieces", priceModifier: 0 },
+      { id: "v-fc2", name: "4 Pieces", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "af4",
+    name: "Suya Noodles",
+    description:
+      "Stir-fried noodles tossed in suya spice with vegetables and your choice of protein",
+    price: 3500,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten"],
+    variants: [
+      { id: "v-sn1", name: "Chicken", priceModifier: 0 },
+      { id: "v-sn2", name: "Beef", priceModifier: 500 },
+      { id: "v-sn3", name: "Shrimp", priceModifier: 1000 },
+    ],
+  },
+  {
+    id: "af5",
+    name: "Wings Platter",
+    description:
+      "Juicy chicken wings marinated in our house spice blend, served with guacamole dip",
+    price: 4500,
+    category: "mains",
+    dietary: ["halal", "gluten-free"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: [],
+    variants: [
+      { id: "v-w1", name: "6 Wings", priceModifier: 0 },
+      { id: "v-w2", name: "12 Wings", priceModifier: 2000 },
+    ],
+  },
+
+  // ── Pizza ─────────────────────────────────────────────────────
+  {
+    id: "p1",
+    name: "Double Meat Pizza",
+    description:
+      "Tomato sauce, cheese, chili sauce, grill beef, chicken, pepperoni, sausage, onions, red pepper, chili flakes",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-dm1", name: "Medium", priceModifier: 0 },
+      { id: "v-dm2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p2",
+    name: "Chef Special Pizza",
+    description:
+      "Tartar sauce, chili sauce, chicken, beef, sausage, oregano, cheese",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-cs1", name: "Medium", priceModifier: 0 },
+      { id: "v-cs2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p3",
+    name: "Pepperoni Pizza",
+    description: "Classic tomato sauce, cheese, premium pepperoni",
+    price: 10000,
+    category: "mains",
+    dietary: [],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-pp1", name: "Medium", priceModifier: 0 },
+      { id: "v-pp2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p4",
+    name: "BBQ Chicken Pizza",
+    description:
+      "BBQ sauce, jam sauce, chili sauce, tomato sauce, cheese, chicken, onions, green pepper, red pepper",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-bc1", name: "Medium", priceModifier: 0 },
+      { id: "v-bc2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p5",
+    name: "Chicken Suya Pizza",
+    description:
+      "Suya sauce, cheese, onions, red chili, green pepper, grilled chicken",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-csp1", name: "Medium", priceModifier: 0 },
+      { id: "v-csp2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p6",
+    name: "Sausage Blend Pizza",
+    description:
+      "Sweet chili sauce, cheeses, sausage, sweet corn, oregano",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-sb1", name: "Medium", priceModifier: 0 },
+      { id: "v-sb2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p7",
+    name: "Beef Suya Pizza",
+    description: "Suya sauce, beef, jam sauce, cheese, onions",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-bs1", name: "Medium", priceModifier: 0 },
+      { id: "v-bs2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p8",
+    name: "Chicken Supreme Pizza",
+    description:
+      "Scampi sauce, tomato sauce, cheese, sweet corn, grilled chicken, onions, green & yellow pepper",
+    price: 10000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-csup1", name: "Medium", priceModifier: 0 },
+      { id: "v-csup2", name: "Large", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "p9",
+    name: "Cocktail Pizza",
+    description:
+      "Tartar sauce, chili sauce, cheese, chicken, beef, shrimps, pepperoni, chili flakes, mushroom",
+    price: 12500,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    allergens: ["gluten", "dairy", "shellfish"],
+    variants: [
+      { id: "v-cp1", name: "Medium", priceModifier: 0 },
+      { id: "v-cp2", name: "Large", priceModifier: 1500 },
+    ],
+  },
+  {
+    id: "p10",
+    name: "Major Chow Special Pizza",
+    description:
+      "Jam sauce, cheese, chili sauce, sweet chili sauce, pineapple, chicken sausage, red chili, mushroom, sweet corn, black olive, shrimps, sausage oil — our signature creation",
+    price: 13000,
+    category: "mains",
+    dietary: ["halal"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    allergens: ["gluten", "dairy", "shellfish"],
+    variants: [
+      { id: "v-mcs1", name: "Medium", priceModifier: 0 },
+      { id: "v-mcs2", name: "Large", priceModifier: 3000 },
+    ],
+  },
+
+  // ── Shawarma ──────────────────────────────────────────────────
+  {
+    id: "sw1",
+    name: "Chicken Shawarma",
+    description:
+      "Marinated grilled chicken with fresh vegetables, house sauce, wrapped in warm flatbread",
+    price: 2500,
+    category: "starters",
+    dietary: ["halal"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    allergens: ["gluten"],
+    variants: [
+      { id: "v-csw1", name: "Small (no sausage)", priceModifier: 0 },
+      { id: "v-csw2", name: "Small (with sausage)", priceModifier: 500 },
+      { id: "v-csw3", name: "Medium (no sausage)", priceModifier: 1000 },
+      { id: "v-csw4", name: "Medium (with sausage)", priceModifier: 1500 },
+      { id: "v-csw5", name: "Large (no sausage)", priceModifier: 2000 },
+      { id: "v-csw6", name: "Large (with sausage)", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "sw2",
+    name: "Beef Shawarma",
+    description:
+      "Thinly sliced spiced beef with crisp vegetables, chili sauce, cheese, wrapped in flatbread",
+    price: 3000,
+    category: "starters",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+    variants: [
+      { id: "v-bsw1", name: "Small (no sausage)", priceModifier: 0 },
+      { id: "v-bsw2", name: "Small (with sausage)", priceModifier: 500 },
+      { id: "v-bsw3", name: "Medium (no sausage)", priceModifier: 1000 },
+      { id: "v-bsw4", name: "Medium (with sausage)", priceModifier: 1500 },
+      { id: "v-bsw5", name: "Large (no sausage)", priceModifier: 2000 },
+      { id: "v-bsw6", name: "Large (with sausage)", priceModifier: 2500 },
+    ],
+  },
+  {
+    id: "sw3",
+    name: "Major Chow Special Shawarma",
+    description:
+      "Our signature shawarma — loaded with double protein, special house sauces, and all the toppings",
+    price: 5500,
+    category: "starters",
+    dietary: ["halal"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    allergens: ["gluten", "dairy"],
+  },
+
+  // ── Drinks ────────────────────────────────────────────────────
+  {
+    id: "dr1",
+    name: "Tiger Nut Drink",
+    description:
+      "Major Chow's signature natural tiger nut drink — creamy, refreshing, and nourishing",
+    price: 1500,
+    category: "soft-drinks",
+    dietary: ["vegan", "gluten-free", "dairy-free"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    image: "/images/food/jollof-rice.jpg",
+    allergens: ["nuts"],
+    variants: [
+      { id: "v-tn1", name: "Regular (500ml)", priceModifier: 0 },
+      { id: "v-tn2", name: "Large (1L)", priceModifier: 1000 },
+    ],
+  },
+  {
+    id: "dr2",
+    name: "Mocha Coffee Float",
+    description:
+      "Rich mocha coffee topped with fresh whipped cream and a dusting of cocoa powder",
+    price: 2000,
+    category: "cocktails",
+    dietary: ["vegetarian"],
+    available: true,
+    featured: true,
+    seasonal: false,
+    image: "/images/food/coffee-drink.jpg",
+    allergens: ["dairy"],
+  },
+  {
+    id: "dr3",
+    name: "Fresh Juice",
+    description:
+      "Freshly blended seasonal fruit juice — ask your server for today's selection",
+    price: 1200,
+    category: "soft-drinks",
+    dietary: ["vegan", "gluten-free"],
+    available: true,
+    featured: false,
+    seasonal: true,
+    allergens: [],
+    variants: [
+      { id: "v-fj1", name: "Regular", priceModifier: 0 },
+      { id: "v-fj2", name: "Large", priceModifier: 500 },
+    ],
+  },
+  {
+    id: "dr4",
+    name: "Chapman",
+    description:
+      "Classic Nigerian Chapman cocktail — a refreshing blend of Fanta, Sprite, Ribena, Angostura bitters, cucumber and fruit",
+    price: 1800,
+    category: "cocktails",
+    dietary: ["vegetarian"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: [],
+  },
+
+  // ── Sides & Extras ─────────────────────────────────────────────
+  {
+    id: "sx1",
+    name: "Fried Sweet Plantains",
+    description: "Golden caramelised sweet plantains — the perfect side",
+    price: 800,
+    category: "starters",
+    dietary: ["vegan", "gluten-free"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: [],
+  },
+  {
+    id: "sx2",
+    name: "Fried Yam Chips",
+    description: "Crispy seasoned fried yam chips with chili dipping sauce",
+    price: 1000,
+    category: "starters",
+    dietary: ["vegan", "gluten-free"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: [],
+  },
+  {
+    id: "sx3",
+    name: "Extra Sausage",
+    description: "Extra sausage add-on for any pizza or shawarma",
+    price: 500,
+    category: "starters",
+    dietary: ["halal"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["gluten"],
+  },
+  {
+    id: "sx4",
+    name: "Extra Cheese",
+    description: "Extra mozzarella cheese add-on",
+    price: 500,
+    category: "starters",
+    dietary: ["vegetarian"],
+    available: true,
+    featured: false,
+    seasonal: false,
+    allergens: ["dairy"],
+  },
+];
+
+export const getMenuByCategory = (category: string) =>
+  menuItems.filter((item) => item.category === category);
+
+export const getFeaturedItems = () =>
+  menuItems.filter((item) => item.featured && item.available);
+
+export const getAvailableItems = () =>
+  menuItems.filter((item) => item.available);
