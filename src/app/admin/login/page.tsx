@@ -4,8 +4,6 @@ import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Lock } from "lucide-react";
 
-export const metadata = { title: "Admin Login — Major Chow" };
-
 export default function AdminLoginPage() {
   const router = useRouter();
   const [password, setPassword] = useState("");
