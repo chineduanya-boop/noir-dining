@@ -69,8 +69,8 @@ export default function HomePage() {
           {/* Background */}
           <div className="absolute inset-0 z-0 bg-noir-950">
             <Image
-              src="/images/gallery/interior-main.jpg"
-              alt="Major Chow Restaurant interior"
+              src="/images/brand/logo-branding.jpg"
+              alt="Major Chow Restaurant"
               fill
               priority
               className="object-cover object-center opacity-60"
@@ -194,7 +194,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[580px]">
             <div className="relative min-h-72 lg:min-h-full img-hover bg-noir-700">
               <Image
-                src="/images/gallery/interior-1.jpg"
+                src="/images/gallery/interior-main.jpg"
                 alt="Major Chow Restaurant interior — marble floors and warm ambience"
                 fill
                 className="object-cover"
