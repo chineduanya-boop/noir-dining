@@ -69,8 +69,8 @@ export function Header() {
                 <span className="font-display text-xl lg:text-2xl font-light tracking-[0.08em] text-cream-100 group-hover:text-gold-500 transition-colors duration-300">
                   CRUSH CAFE
                 </span>
-                <span className="font-body text-[0.58rem] tracking-[0.28em] text-gold-600 uppercase mt-0.5">
-                  Bar · Restaurant · Fine Dining
+                <span className="font-body text-[0.52rem] tracking-[0.22em] text-gold-600 uppercase mt-0.5">
+                  Abuja
                 </span>
               </div>
             </Link>
