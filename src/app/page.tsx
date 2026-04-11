@@ -4,59 +4,56 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ChevronDown, MapPin, Clock, Phone, Star, ArrowRight } from "lucide-react";
 
-const featuredDishes = [
+const featuredExperiences = [
   {
     id: 1,
-    name: "Signature Jollof Rice",
-    description: "Smoky party-style jollof rice, fried plantains & boiled eggs",
-    price: "₦4,500",
-    tag: "Most Loved",
-    image: "/images/food/jollof-rice.jpg",
-    fallbackBg: "bg-amber-900",
+    name: "The Bar",
+    description: "Premium spirits, craft cocktails and an extensive wine list served at our sleek dark bar counter",
+    tag: "Signature Experience",
+    image: "/images/gallery/bar-interior.jpg",
+    fallbackBg: "bg-amber-950",
   },
   {
     id: 2,
-    name: "Major Chow Special Pizza",
-    description: "Our signature loaded pizza — jam sauce, cheese, shrimps, sausage & more",
-    price: "from ₦13,000",
-    tag: "House Special",
-    image: "/images/brand/logo-branding.jpg",
+    name: "Outdoor Terrace",
+    description: "Al fresco dining under string lights — our iconic open-air deck is the heart of Crush Cafe",
+    tag: "Most Loved",
+    image: "/images/gallery/outdoor-dining.jpg",
     fallbackBg: "bg-stone-800",
   },
   {
     id: 3,
-    name: "African Stew Platter",
-    description: "Rich beef stew with fried yam chips and caramelised plantains",
-    price: "₦5,500",
-    tag: "Fan Favourite",
-    image: "/images/food/stew-plate.jpg",
-    fallbackBg: "bg-red-950",
+    name: "Fine Dining",
+    description: "World-class cuisine in an elegant setting — where every detail of your evening is perfected",
+    tag: "Premium Dining",
+    image: "/images/gallery/daytime-interior.jpg",
+    fallbackBg: "bg-zinc-900",
   },
 ];
 
 const testimonials = [
   {
-    name: "Adaeze O.",
+    name: "Amaka T.",
     rating: 5,
-    text: "The jollof rice here is absolutely unmatched. That smoky base, the plantains — I keep coming back every week.",
+    text: "The outdoor terrace at night is absolutely magical. String lights everywhere, great music, incredible food — Crush Cafe is in a league of its own in Abuja.",
   },
   {
-    name: "Chukwuemeka N.",
+    name: "Emeka F.",
     rating: 5,
-    text: "Ordered the Major Chow Special Pizza and it blew my mind. So many toppings, great flavour balance. Best pizza in town.",
+    text: "Best cocktails in Abuja, hands down. The bar staff really know their craft. And the terrace view at sunset? Unforgettable.",
   },
   {
-    name: "Fatima B.",
+    name: "Zainab A.",
     rating: 5,
-    text: "The atmosphere is classy and the service is top-tier. Tiger Nut Drink is a must-try — so refreshing and natural.",
+    text: "We had our anniversary dinner here and it was perfect. The service, the food, the atmosphere — everything was elevated. We keep coming back.",
   },
 ];
 
 const menuCategories = [
-  { label: "African Dishes", icon: "🍛", href: "/menu#african", desc: "Jollof rice, stews, plantains & more" },
-  { label: "Pizza", icon: "🍕", href: "/menu#pizza", desc: "10 varieties, medium & large sizes" },
-  { label: "Shawarma", icon: "🌯", href: "/menu#shawarma", desc: "Chicken, beef & signature specials" },
-  { label: "Drinks", icon: "🥤", href: "/menu#drinks", desc: "Tiger Nut, coffee, fresh juices & Chapman" },
+  { label: "Bar & Cocktails", icon: "🍹", href: "/menu#bar", desc: "Craft cocktails, premium spirits & wine" },
+  { label: "Restaurant Mains", icon: "🍽️", href: "/menu#mains", desc: "Grills, seafood, pasta & African classics" },
+  { label: "Starters & Sides", icon: "🥗", href: "/menu#starters", desc: "Sharing plates, soups & fresh starters" },
+  { label: "Drinks & Mocktails", icon: "🥤", href: "/menu#drinks", desc: "Fresh juices, mocktails & soft drinks" },
 ];
 
 export default function HomePage() {
@@ -69,48 +66,41 @@ export default function HomePage() {
           {/* Background */}
           <div className="absolute inset-0 z-0 bg-noir-950">
             <Image
-              src="/images/brand/logo-branding.jpg"
-              alt="Major Chow Restaurant"
+              src="/images/gallery/outdoor-dining.jpg"
+              alt="Crush Cafe Abuja — outdoor terrace at sunset"
               fill
               priority
-              className="object-cover object-center opacity-60"
+              className="object-cover object-center opacity-65"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-noir-950/80 via-noir-900/70 to-noir-950/90" />
+            <div className="absolute inset-0 bg-gradient-to-b from-noir-950/80 via-noir-900/60 to-noir-950/90" />
           </div>
 
           <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="gold-line w-12" />
-              <span className="overline text-[0.6rem]">Premium Restaurant · Est. 2019</span>
+              <span className="overline text-[0.6rem]">Bar · Restaurant · Fine Dining · Abuja</span>
               <div className="gold-line w-12" />
             </div>
 
-            {/* Globe logo */}
+            {/* Crush Cafe logo mark */}
             <div className="flex justify-center mb-6">
               <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 lg:w-24 lg:h-24">
-                <circle cx="50" cy="50" r="46" stroke="#C9A96E" strokeWidth="2.5" fill="none"/>
-                <ellipse cx="50" cy="50" rx="24" ry="46" stroke="#C9A96E" strokeWidth="1.5" fill="none"/>
-                <line x1="8" y1="50" x2="92" y2="50" stroke="#C9A96E" strokeWidth="1.5"/>
-                <line x1="18" y1="28" x2="82" y2="28" stroke="#C9A96E" strokeWidth="1.2"/>
-                <line x1="18" y1="72" x2="82" y2="72" stroke="#C9A96E" strokeWidth="1.2"/>
-                <circle cx="50" cy="38" r="5" fill="#C9A96E"/>
-                <path d="M42 55 Q50 48 58 55" stroke="#C9A96E" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-                <line x1="50" y1="43" x2="50" y2="55" stroke="#C9A96E" strokeWidth="2.5" strokeLinecap="round"/>
-                <line x1="44" y1="60" x2="56" y2="60" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="44" y1="60" x2="42" y2="70" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="56" y1="60" x2="58" y2="70" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round"/>
+                <circle cx="50" cy="50" r="46" fill="#e8632a" opacity="0.15"/>
+                <circle cx="50" cy="50" r="46" stroke="#e8632a" strokeWidth="2.5" fill="none"/>
+                <path d="M72 32 C72 32 60 22 45 22 C28 22 16 34 16 50 C16 66 28 78 45 78 C60 78 72 68 72 68" stroke="#e8632a" strokeWidth="5" fill="none" strokeLinecap="round"/>
+                <circle cx="72" cy="50" r="8" fill="#e8632a"/>
               </svg>
             </div>
 
             <h1 className="font-display text-6xl sm:text-7xl lg:text-9xl font-light tracking-[0.05em] text-cream-50 mb-2">
-              MAJOR
+              CRUSH
               <br />
-              <span className="gold-shimmer italic">CHOW</span>
+              <span className="gold-shimmer italic">CAFE</span>
             </h1>
-            <p className="font-body text-[0.7rem] uppercase tracking-[0.3em] text-gold-600 mb-8">Restaurant</p>
+            <p className="font-body text-[0.7rem] uppercase tracking-[0.3em] text-gold-600 mb-8">Abuja, Nigeria</p>
             <p className="font-display text-xl lg:text-2xl font-light italic text-cream-200 mb-12 leading-relaxed">
-              &ldquo;Eat Healthy, Live Healthy&rdquo;
+              &ldquo;Where Every Moment is Unforgettable&rdquo;
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -124,7 +114,7 @@ export default function HomePage() {
           </div>
 
           <a href="#featured" className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-stone-warm hover:text-gold-500 transition-colors">
-            <span className="font-body text-[0.56rem] uppercase tracking-[0.3em]">Scroll</span>
+            <span className="font-body text-[0.56rem] uppercase tracking-[0.3em]">Explore</span>
             <ChevronDown size={14} className="animate-bounce" />
           </a>
         </section>
@@ -134,47 +124,46 @@ export default function HomePage() {
           <div className="flex animate-marquee whitespace-nowrap">
             {Array(8).fill(null).map((_, i) => (
               <span key={i} className="font-body text-[0.62rem] uppercase tracking-[0.22em] text-noir-900 font-medium mx-6">
-                Eat Healthy · Live Healthy &nbsp;&bull;&nbsp; Dine In · Takeaway · Delivery &nbsp;&bull;&nbsp; Pizza · Shawarma · Jollof Rice · Tiger Nut &nbsp;&bull;&nbsp;
+                Bar &amp; Cocktails &nbsp;&bull;&nbsp; Fine Dining &nbsp;&bull;&nbsp; Outdoor Terrace &nbsp;&bull;&nbsp; Private Events &nbsp;&bull;&nbsp; Billiards Lounge &nbsp;&bull;&nbsp; Abuja&apos;s Premier Destination &nbsp;&bull;&nbsp;
               </span>
             ))}
           </div>
         </div>
 
-        {/* ── SIGNATURE DISHES ─────────────────────────────────── */}
+        {/* ── SIGNATURE EXPERIENCES ────────────────────────────── */}
         <section id="featured" className="py-28 px-6 max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="overline mb-4">Signature Dishes</p>
+            <p className="overline mb-4">Signature Experiences</p>
             <div className="gold-line w-20 mx-auto mb-6" />
             <h2 className="font-display text-5xl lg:text-6xl font-light text-cream-100">
-              Chow Now,
+              Three worlds,
               <br />
-              <em className="text-gold-500">Worry Later</em>
+              <em className="text-gold-500">one destination</em>
             </h2>
             <p className="font-body text-sm text-stone-light mt-5 max-w-xl mx-auto leading-relaxed">
-              From smoky Nigerian classics to loaded pizzas and perfectly rolled shawarmas — every dish is crafted with bold flavour and fresh quality ingredients.
+              From our moody cocktail bar to the sun-drenched outdoor terrace and our refined fine dining room — Crush Cafe offers an experience unlike anywhere else in Abuja.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {featuredDishes.map((dish) => (
-              <div key={dish.id} className="group relative overflow-hidden aspect-[4/5]">
-                <div className={`absolute inset-0 ${dish.fallbackBg}`} />
+            {featuredExperiences.map((exp) => (
+              <div key={exp.id} className="group relative overflow-hidden aspect-[4/5]">
+                <div className={`absolute inset-0 ${exp.fallbackBg}`} />
                 <Image
-                  src={dish.image}
-                  alt={dish.name}
+                  src={exp.image}
+                  alt={exp.name}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width:768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-noir-950/90 via-noir-900/30 to-transparent" />
                 <div className="absolute inset-0 p-7 flex flex-col justify-end">
-                  <span className="overline text-[0.56rem] text-gold-400 mb-2">{dish.tag}</span>
-                  <h3 className="font-display text-2xl font-light text-cream-50 mb-2">{dish.name}</h3>
-                  <p className="font-body text-xs text-stone-light mb-4 leading-relaxed">{dish.description}</p>
+                  <span className="overline text-[0.56rem] text-gold-400 mb-2">{exp.tag}</span>
+                  <h3 className="font-display text-2xl font-light text-cream-50 mb-2">{exp.name}</h3>
+                  <p className="font-body text-xs text-stone-light mb-4 leading-relaxed">{exp.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="font-display text-lg text-gold-500">{dish.price}</span>
-                    <Link href="/order" className="font-body text-[0.58rem] uppercase tracking-[0.2em] text-gold-500 hover:text-gold-300 flex items-center gap-1">
-                      Order <ArrowRight size={10} />
+                    <Link href="/reservations" className="font-body text-[0.58rem] uppercase tracking-[0.2em] text-gold-500 hover:text-gold-300 flex items-center gap-1">
+                      Reserve <ArrowRight size={10} />
                     </Link>
                   </div>
                 </div>
@@ -194,8 +183,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[580px]">
             <div className="relative min-h-72 lg:min-h-full img-hover bg-noir-700">
               <Image
-                src="/images/gallery/interior-main.jpg"
-                alt="Major Chow Restaurant interior — marble floors and warm ambience"
+                src="/images/gallery/exterior.jpg"
+                alt="Crush Cafe Abuja — elegant white exterior with palm trees"
                 fill
                 className="object-cover"
                 sizes="(max-width:1024px) 100vw, 50vw"
@@ -203,18 +192,18 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-noir-900/20" />
             </div>
             <div className="flex flex-col justify-center px-10 lg:px-16 xl:px-20 py-20">
-              <p className="overline mb-5">About Major Chow</p>
+              <p className="overline mb-5">About Crush Cafe</p>
               <div className="gold-line w-16 mb-8" />
               <h2 className="font-display text-4xl lg:text-5xl font-light text-cream-100 leading-tight mb-7">
-                Bold flavours,
+                Abuja&apos;s most
                 <br />
-                <em className="text-gold-500">warm in every bite</em>
+                <em className="text-gold-500">vibrant destination</em>
               </h2>
               <p className="font-body text-sm text-stone-light leading-loose mb-5">
-                Major Chow Restaurant was born from a simple belief: that great food should be accessible, bold in flavour, and made with genuine care. We blend the finest African culinary traditions with contemporary techniques to create dishes that nourish the body and delight the spirit.
+                Crush Cafe is where Abuja comes alive. Our beautiful white colonial building sets the stage for an experience that blends world-class food, expertly crafted cocktails, and an atmosphere that stays with you long after you leave.
               </p>
               <p className="font-body text-sm text-stone-light leading-loose mb-10">
-                Our marble-floored dining room, vibrant lounge, and attentive team make every visit more than a meal — it&apos;s an experience.
+                Whether you&apos;re after a casual drink at the bar, a romantic dinner on the terrace, or a night out with friends in our billiards lounge — this is your place.
               </p>
               <Link href="/about" className="font-body text-[0.68rem] uppercase tracking-[0.22em] text-gold-500 hover-underline flex items-center gap-2 self-start">
                 Our Story <ArrowRight size={11} />
@@ -226,7 +215,7 @@ export default function HomePage() {
         {/* ── MENU CATEGORIES ──────────────────────────────────── */}
         <section className="py-28 px-6 max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="overline mb-4">What We Serve</p>
+            <p className="overline mb-4">What We Offer</p>
             <div className="gold-line w-20 mx-auto mb-6" />
             <h2 className="font-display text-5xl lg:text-6xl font-light text-cream-100">
               Explore the <em className="text-gold-500">Menu</em>
@@ -248,10 +237,10 @@ export default function HomePage() {
         <section className="relative py-28 overflow-hidden">
           <div className="absolute inset-0 bg-noir-800">
             <Image
-              src="/images/food/coffee-drink.jpg"
-              alt="Major Chow lounge — billiards and cocktails"
+              src="/images/gallery/lounge-billiards.jpg"
+              alt="Crush Cafe lounge — billiards and cocktails"
               fill
-              className="object-cover object-center opacity-40"
+              className="object-cover object-center opacity-45"
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-noir-950/50 to-noir-950/90" />
@@ -263,13 +252,13 @@ export default function HomePage() {
               More than a<br /><em className="text-gold-500">restaurant</em>
             </h2>
             <p className="font-body text-sm text-stone-light leading-loose max-w-2xl mx-auto mb-14">
-              Major Chow is a social destination — with a warm dining room, billiards lounge, and vibrant atmosphere that makes every visit unforgettable. Come for the food. Stay for the experience.
+              Crush Cafe is a complete social destination — with a sophisticated cocktail bar, lush outdoor terrace, fine dining room, and a billiards lounge that makes every night a story worth telling.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
               {[
-                { label: "Dine In", icon: "🍽️", desc: "Elegant marble-floored dining" },
-                { label: "Lounge & Pool", icon: "🎱", desc: "Billiards, cocktails & good vibes" },
-                { label: "Private Events", icon: "🥂", desc: "Celebrate in style with us" },
+                { label: "Cocktail Bar", icon: "🍸", desc: "Premium spirits, craft cocktails & fine wines" },
+                { label: "Outdoor Terrace", icon: "✨", desc: "String-lit al fresco dining with lush greenery" },
+                { label: "Billiards Lounge", icon: "🎱", desc: "Pool tables, cocktails & electric vibes" },
               ].map((item) => (
                 <div key={item.label} className="flex flex-col items-center gap-3">
                   <span className="text-3xl">{item.icon}</span>
@@ -287,7 +276,7 @@ export default function HomePage() {
             <div>
               <p className="overline mb-3">Gallery</p>
               <h2 className="font-display text-4xl font-light text-cream-100">
-                A Taste of <em className="text-gold-500">Major Chow</em>
+                A Taste of <em className="text-gold-500">Crush Cafe</em>
               </h2>
             </div>
             <Link href="/gallery" className="hidden sm:flex font-body text-[0.65rem] uppercase tracking-[0.2em] text-gold-500 hover-underline items-center gap-2">
@@ -296,19 +285,19 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-3 h-[500px]">
             <div className="relative img-hover bg-noir-800 md:row-span-2 col-span-1">
-              <Image src="/images/gallery/food-1.jpg" alt="Jollof rice with plantains" fill className="object-cover" sizes="25vw" />
+              <Image src="/images/gallery/bar-interior.jpg" alt="Crush Cafe bar interior" fill className="object-cover" sizes="25vw" />
             </div>
             <div className="relative img-hover bg-noir-800">
-              <Image src="/images/gallery/food-2.jpg" alt="African stew platter" fill className="object-cover" sizes="25vw" />
+              <Image src="/images/gallery/terrace-1.jpg" alt="Outdoor terrace at Crush Cafe" fill className="object-cover" sizes="25vw" />
             </div>
             <div className="relative img-hover bg-noir-800">
-              <Image src="/images/gallery/drinks-1.jpg" alt="Mocha coffee at lounge" fill className="object-cover" sizes="25vw" />
+              <Image src="/images/gallery/lounge-billiards.jpg" alt="Billiards lounge and cocktails" fill className="object-cover" sizes="25vw" />
             </div>
             <div className="relative img-hover bg-noir-800 md:row-span-2 col-span-1">
-              <Image src="/images/gallery/interior-1.jpg" alt="Dining room interior" fill className="object-cover" sizes="25vw" />
+              <Image src="/images/gallery/daytime-interior.jpg" alt="Crush Cafe daytime interior" fill className="object-cover" sizes="25vw" />
             </div>
             <div className="relative img-hover bg-noir-800 col-span-2">
-              <Image src="/images/brand/logo-sign.jpg" alt="Major Chow exterior signage" fill className="object-cover object-center" sizes="50vw" />
+              <Image src="/images/gallery/outdoor-dining.jpg" alt="Crush Cafe outdoor dining at sunset" fill className="object-cover object-center" sizes="50vw" />
               <div className="absolute inset-0 bg-noir-950/30" />
             </div>
           </div>
@@ -329,7 +318,7 @@ export default function HomePage() {
                 <div key={i} className="bg-noir-700 border border-cream-100/5 p-8">
                   <div className="flex gap-1 mb-5">
                     {Array(t.rating).fill(null).map((_, j) => (
-                      <Star key={j} size={12} fill="#C9A96E" className="text-gold-500" />
+                      <Star key={j} size={12} fill="#e8632a" className="text-gold-500" />
                     ))}
                   </div>
                   <p className="font-body text-sm text-stone-light leading-relaxed mb-6 italic">&ldquo;{t.text}&rdquo;</p>
@@ -343,14 +332,14 @@ export default function HomePage() {
 
         {/* ── RESERVATION + ORDER CTA ───────────────────────────── */}
         <section className="py-28 px-6 max-w-4xl mx-auto text-center">
-          <p className="overline mb-5">Ready to Chow?</p>
+          <p className="overline mb-5">Ready to Experience Crush?</p>
           <div className="gold-line w-24 mx-auto mb-8" />
           <h2 className="font-display text-5xl lg:text-6xl font-light text-cream-100 mb-6">
             Reserve a table or<br />
             <em className="text-gold-500">order delivery</em>
           </h2>
           <p className="font-body text-sm text-stone-light max-w-xl mx-auto mb-12 leading-relaxed">
-            Book your table for a full dine-in experience, or place an order online for pickup or delivery straight to your door.
+            Book your table for the full Crush Cafe experience, or place an order online for pickup or delivery.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <Link href="/reservations" className="font-body text-[0.72rem] uppercase tracking-[0.22em] px-12 py-4 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-noir-900 transition-all duration-300 w-full sm:w-auto text-center">
@@ -366,15 +355,14 @@ export default function HomePage() {
         <section className="bg-noir-800 py-20 px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-noir-700 border border-cream-100/5 aspect-video flex items-center justify-center relative overflow-hidden">
-              {/* Map embed placeholder */}
               <div className="absolute inset-0">
-                <Image src="/images/brand/logo-sign.jpg" alt="Major Chow location" fill className="object-cover opacity-30" sizes="50vw" />
+                <Image src="/images/gallery/exterior.jpg" alt="Crush Cafe Abuja location" fill className="object-cover opacity-40" sizes="50vw" />
               </div>
               <div className="relative z-10 text-center p-8">
                 <MapPin size={32} className="text-gold-500 mx-auto mb-4" />
                 <p className="font-display text-2xl font-light text-cream-100 mb-2">Visit Us</p>
-                <p className="font-body text-sm text-stone-light mb-4">Major Chow Restaurant<br />Your City, Nigeria</p>
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                <p className="font-body text-sm text-stone-light mb-4">Crush Cafe<br />Abuja, Nigeria</p>
+                <a href="https://maps.google.com/search?q=Crush+Cafe+Abuja" target="_blank" rel="noopener noreferrer"
                   className="font-body text-[0.62rem] uppercase tracking-[0.2em] text-gold-500 border border-gold-500/40 px-5 py-2 hover:bg-gold-500/10 transition-colors inline-block">
                   Get Directions
                 </a>
@@ -383,7 +371,7 @@ export default function HomePage() {
             <div>
               <p className="overline mb-5">Hours & Location</p>
               <h2 className="font-display text-4xl font-light text-cream-100 mb-8">
-                Visit <em className="text-gold-500">Major Chow</em>
+                Visit <em className="text-gold-500">Crush Cafe</em>
               </h2>
               <div className="space-y-6">
                 {[
@@ -392,15 +380,15 @@ export default function HomePage() {
                     label: "Opening Hours",
                     content: (
                       <div className="font-body text-sm text-stone-light space-y-1">
-                        <p>Monday – Saturday &nbsp;·&nbsp; 10:00am – 11:00pm</p>
-                        <p>Sunday &nbsp;·&nbsp; 12:00pm – 10:00pm</p>
+                        <p>Monday – Saturday &nbsp;·&nbsp; 11:00am – 12:00am</p>
+                        <p>Sunday &nbsp;·&nbsp; 12:00pm – 11:00pm</p>
                       </div>
                     ),
                   },
                   {
                     icon: <MapPin size={16} strokeWidth={1.5} className="text-gold-500 mt-0.5 flex-shrink-0" />,
                     label: "Address",
-                    content: <p className="font-body text-sm text-stone-light">Major Chow Restaurant, Your City, Nigeria</p>,
+                    content: <p className="font-body text-sm text-stone-light">Crush Cafe, Abuja, Nigeria</p>,
                   },
                   {
                     icon: <Phone size={16} strokeWidth={1.5} className="text-gold-500 mt-0.5 flex-shrink-0" />,

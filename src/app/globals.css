@@ -13,12 +13,12 @@
   --color-cream-100: #f5f0e8;
   --color-cream-200: #ede5d8;
   --color-cream-300: #e0d5c5;
-  --color-gold-300: #e8c97a;
-  --color-gold-400: #d4a853;
-  --color-gold-500: #c9a96e;
-  --color-gold-600: #b8922a;
-  --color-gold-700: #a07850;
-  --color-gold-800: #7a5c38;
+  --color-gold-300: #f0a060;
+  --color-gold-400: #e87840;
+  --color-gold-500: #e8632a;
+  --color-gold-600: #d4511a;
+  --color-gold-700: #b84318;
+  --color-gold-800: #8c3210;
   --color-stone-warm: #8b8070;
   --color-stone-light: #b5aca0;
   --color-burgundy: #6b2d3e;
@@ -78,14 +78,14 @@ body {
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #111111; }
-::-webkit-scrollbar-thumb { background: #b8922a; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #c9a96e; }
+::-webkit-scrollbar-thumb { background: #d4511a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #e8632a; }
 
 /* Text selection */
-::selection { background: rgba(201, 169, 110, 0.25); color: #faf8f4; }
+::selection { background: rgba(232, 99, 42, 0.25); color: #faf8f4; }
 
 /* Focus styles */
-*:focus-visible { outline: 1px solid #c9a96e; outline-offset: 3px; }
+*:focus-visible { outline: 1px solid #e8632a; outline-offset: 3px; }
 
 /* Hide scrollbar for horizontal scroll */
 .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -94,11 +94,11 @@ body {
 /* Gold decorative line */
 .gold-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #c9a96e 40%, #c9a96e 60%, transparent);
+  background: linear-gradient(90deg, transparent, #e8632a 40%, #e8632a 60%, transparent);
 }
 .gold-line-v {
   width: 1px;
-  background: linear-gradient(180deg, transparent, #c9a96e 40%, #c9a96e 60%, transparent);
+  background: linear-gradient(180deg, transparent, #e8632a 40%, #e8632a 60%, transparent);
 }
 
 /* Overline / label style */
@@ -108,12 +108,12 @@ body {
   font-size: 0.65rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: #c9a96e;
+  color: #e8632a;
 }
 
 /* Gold shimmer text */
 .gold-shimmer {
-  background: linear-gradient(90deg, #c9a96e 0%, #e8c97a 40%, #c9a96e 60%, #a07850 100%);
+  background: linear-gradient(90deg, #e8632a 0%, #e8c97a 40%, #e8632a 60%, #a07850 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -128,7 +128,7 @@ body {
   position: absolute;
   bottom: -2px; left: 0;
   width: 0; height: 1px;
-  background: #c9a96e;
+  background: #e8632a;
   transition: width 0.4s ease;
 }
 .hover-underline:hover::after { width: 100%; }

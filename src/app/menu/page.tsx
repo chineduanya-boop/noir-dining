@@ -27,7 +27,7 @@ const formatPrice = (price: number) =>
 
 export const metadata = {
   title: "Menu",
-  description: "Browse the full Major Chow menu — African dishes, pizza, shawarma, drinks and more.",
+  description: "Browse the full Crush Cafe menu — bar cocktails, restaurant mains, starters and drinks.",
 };
 
 export default function MenuPage() {
@@ -43,7 +43,7 @@ export default function MenuPage() {
         {/* Page hero */}
         <div className="relative bg-noir-800 py-20 px-6 text-center overflow-hidden">
           <div className="absolute inset-0">
-            <Image src="/images/food/banner-dishes.jpg" alt="Major Chow dishes" fill className="object-cover opacity-20" sizes="100vw" />
+            <Image src="/images/gallery/outdoor-dining.jpg" alt="Crush Cafe" fill className="object-cover opacity-20" sizes="100vw" />
             <div className="absolute inset-0 bg-gradient-to-b from-noir-900/80 to-noir-900/95" />
           </div>
           <div className="relative z-10 max-w-3xl mx-auto">
@@ -53,7 +53,7 @@ export default function MenuPage() {
               The Full <em className="text-gold-500">Menu</em>
             </h1>
             <p className="font-body text-sm text-stone-light leading-relaxed">
-              Crafted with fresh ingredients. Bold in flavour. Eat Healthy, Live Healthy.
+              Crafted with passion. Bold in flavour. Abuja&apos;s finest bar, restaurant and fine dining menu.
             </p>
           </div>
         </div>

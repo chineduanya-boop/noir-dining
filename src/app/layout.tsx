@@ -3,27 +3,26 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Major Chow Restaurant — Eat Healthy, Live Healthy",
-    template: "%s | Major Chow Restaurant",
+    default: "Crush Cafe — Bar · Restaurant · Fine Dining · Abuja",
+    template: "%s | Crush Cafe",
   },
   description:
-    "Major Chow Restaurant — a premium dining destination serving bold African flavours, shawarma, pizza, and signature drinks. Eat Healthy, Live Healthy.",
+    "Crush Cafe Abuja — an upscale bar, restaurant and fine dining destination. Stunning outdoor terrace, signature cocktails, world-class cuisine and a vibrant social atmosphere.",
   keywords: [
-    "Major Chow",
-    "Major Chow Restaurant",
-    "African restaurant",
-    "Nigerian food",
-    "shawarma",
-    "pizza",
-    "jollof rice",
-    "reservations",
-    "delivery",
-    "eat healthy live healthy",
+    "Crush Cafe",
+    "Crush Cafe Abuja",
+    "bar and restaurant Abuja",
+    "fine dining Abuja",
+    "outdoor dining Abuja",
+    "cocktail bar Abuja",
+    "restaurant Abuja",
+    "billiards lounge Abuja",
+    "private events Abuja",
   ],
   openGraph: {
-    title: "Major Chow Restaurant — Eat Healthy, Live Healthy",
+    title: "Crush Cafe — Bar · Restaurant · Fine Dining · Abuja",
     description:
-      "Bold African flavours, shawarma, pizza & signature drinks. Dine in, takeaway or delivery.",
+      "Upscale bar, restaurant & fine dining in Abuja. Outdoor terrace, signature cocktails & unforgettable experiences.",
     type: "website",
   },
 };

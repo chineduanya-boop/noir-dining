@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Our Story",
-  description: "Learn about Major Chow Restaurant — our story, our philosophy and our passion for bold, healthy food.",
+  description: "Learn about Crush Cafe Abuja — our story, philosophy and passion for great food, drinks and unforgettable experiences.",
 };
 
 export default function AboutPage() {
@@ -19,10 +19,10 @@ export default function AboutPage() {
         <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-noir-800">
             <Image
-              src="/images/gallery/interior-1.jpg"
-              alt="Major Chow dining room"
+              src="/images/gallery/outdoor-dining.jpg"
+              alt="Crush Cafe outdoor terrace"
               fill
-              className="object-cover opacity-40"
+              className="object-cover opacity-45"
               sizes="100vw"
               priority
             />
@@ -43,24 +43,24 @@ export default function AboutPage() {
             <p className="overline mb-5">The Beginning</p>
             <div className="gold-line w-16 mb-8" />
             <h2 className="font-display text-4xl lg:text-5xl font-light text-cream-100 mb-7 leading-tight">
-              Born from a passion<br />for <em className="text-gold-500">bold, honest food</em>
+              Born from a desire to<br /><em className="text-gold-500">redefine Abuja dining</em>
             </h2>
             <div className="space-y-5 font-body text-sm text-stone-light leading-loose">
               <p>
-                Major Chow Restaurant was founded on a simple but powerful idea: that food should be bold, nourishing, and prepared with genuine care. We wanted to create a space where great African flavours sat alongside international favourites — where a perfect jollof rice could share a table with a loaded shawarma or a signature pizza.
+                Crush Cafe was built on a single conviction — that Abuja deserved a destination where great food, exceptional cocktails, and a beautiful setting came together under one roof. Not just a restaurant. Not just a bar. Something entirely its own.
               </p>
               <p>
-                We believe that eating well should never mean eating boringly. Every dish on our menu is crafted to deliver maximum flavour, using fresh, quality ingredients that feed your body and lift your spirit.
+                From our elegant white colonial exterior to the lush palm-lined terrace, every corner of Crush Cafe was designed to transport you. We wanted a place where you could spend an entire evening — starting with cocktails at the bar, moving to dinner on the terrace, and ending the night in the billiards lounge.
               </p>
               <p>
-                Our motto, <span className="text-gold-500 italic">&ldquo;Eat Healthy, Live Healthy&rdquo;</span>, is not just a slogan — it is the promise we make to every guest who walks through our doors.
+                That vision became Crush Cafe — Abuja&apos;s most vibrant bar, restaurant and fine dining destination.
               </p>
             </div>
           </div>
           <div className="relative aspect-square lg:aspect-auto lg:h-[520px] img-hover bg-noir-800">
             <Image
-              src="/images/brand/logo-branding.jpg"
-              alt="Major Chow brand — Eat Healthy, Live Healthy"
+              src="/images/gallery/terrace-1.jpg"
+              alt="Crush Cafe outdoor terrace with white furniture and palm trees"
               fill
               className="object-cover"
               sizes="(max-width:1024px) 100vw, 50vw"
@@ -77,16 +77,16 @@ export default function AboutPage() {
         <section className="max-w-6xl mx-auto px-6 lg:px-10 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1 relative aspect-square lg:aspect-auto lg:h-[480px] img-hover bg-noir-800">
             <Image
-              src="/images/gallery/food-1.jpg"
-              alt="Major Chow Signature Jollof Rice"
+              src="/images/gallery/bar-interior.jpg"
+              alt="Crush Cafe bar interior at night"
               fill
               className="object-cover"
               sizes="(max-width:1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-noir-950/50 to-transparent" />
             <div className="absolute bottom-6 left-6">
-              <span className="overline text-[0.58rem] text-gold-500">Most Loved</span>
-              <p className="font-display text-xl font-light text-cream-50 mt-1">Signature Jollof Rice</p>
+              <span className="overline text-[0.58rem] text-gold-500">Signature Bar</span>
+              <p className="font-display text-xl font-light text-cream-50 mt-1">Craft Cocktails &amp; Premium Spirits</p>
             </div>
           </div>
           <div className="order-1 lg:order-2">
@@ -97,13 +97,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-5 font-body text-sm text-stone-light leading-loose">
               <p>
-                We source our ingredients carefully — from fresh produce that goes into our jollof rice, to the spices that season our suya-inspired pizzas, to the tiger nuts in our signature bottled drink. Nothing is an afterthought.
+                At Crush Cafe, we believe every detail matters — from the way a cocktail is garnished to the angle of your terrace chair. We obsess over the small things so that you can enjoy the whole picture.
               </p>
               <p>
-                Our kitchen team brings together traditional West African culinary knowledge with a modern, health-conscious approach. We believe you can have food that is deeply satisfying and genuinely good for you.
+                Our kitchen team brings together bold flavours from across the world with a refined, contemporary touch. Our bartenders are artists — each drink crafted with intention and precision.
               </p>
               <p>
-                From the way we season our stews to the way we layer our shawarmas — every step reflects our commitment to your dining experience.
+                From the warm glow of the bar at night to the open sky above our terrace at sunset — every element of Crush Cafe is designed to make you feel something.
               </p>
             </div>
           </div>
@@ -113,8 +113,8 @@ export default function AboutPage() {
         <section className="relative py-24 overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/food/coffee-drink.jpg"
-              alt="Major Chow lounge ambience"
+              src="/images/gallery/outdoor-dining.jpg"
+              alt="Crush Cafe outdoor dining ambience"
               fill
               className="object-cover opacity-30"
               sizes="100vw"
@@ -129,25 +129,25 @@ export default function AboutPage() {
                 More than a <em className="text-gold-500">meal</em>
               </h2>
               <p className="font-body text-sm text-stone-light mt-5 max-w-xl mx-auto leading-relaxed">
-                Walk into Major Chow and you feel the difference immediately. Our space is designed to be both elegant and welcoming.
+                Walk into Crush Cafe and you feel the difference immediately. Every space is designed to be both elegant and alive.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "🏛️",
-                  title: "Elegant Dining Room",
-                  desc: "Marble floors, black furniture, and warm ambient lighting create a premium dining atmosphere that feels both sophisticated and inviting.",
+                  icon: "🍸",
+                  title: "Cocktail Bar",
+                  desc: "Our moody, warmly-lit bar is the soul of Crush Cafe — stocked with premium spirits, fine wines, and craft cocktails that keep the night going.",
+                },
+                {
+                  icon: "✨",
+                  title: "Outdoor Terrace",
+                  desc: "String lights above, lush greenery around you, and the Abuja sky overhead — our terrace is the most beautiful place to dine in the city.",
                 },
                 {
                   icon: "🎱",
-                  title: "Lounge & Billiards",
-                  desc: "Unwind after a great meal in our lounge area, complete with a pool table and a selection of signature drinks and coffee creations.",
-                },
-                {
-                  icon: "🥂",
-                  title: "Private Events",
-                  desc: "Celebrating a birthday, anniversary, or corporate event? Our team will work with you to create a memorable occasion.",
+                  title: "Billiards Lounge",
+                  desc: "The perfect place to unwind with friends — pool tables, great cocktails, and a social energy that keeps the conversation flowing.",
                 },
               ].map((item) => (
                 <div key={item.title} className="bg-noir-800/60 border border-cream-100/5 p-8 text-center">
@@ -164,17 +164,17 @@ export default function AboutPage() {
         <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="relative aspect-video img-hover bg-noir-800">
-              <Image src="/images/gallery/interior-1.jpg" alt="Major Chow interior dining area" fill className="object-cover" sizes="50vw" />
+              <Image src="/images/gallery/outdoor-dining.jpg" alt="Crush Cafe outdoor dining at sunset" fill className="object-cover" sizes="50vw" />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-square img-hover bg-noir-800">
-                <Image src="/images/brand/logo-sign.jpg" alt="Major Chow exterior sign" fill className="object-cover" sizes="25vw" />
+                <Image src="/images/gallery/exterior.jpg" alt="Crush Cafe white colonial exterior" fill className="object-cover" sizes="25vw" />
               </div>
               <div className="relative aspect-square img-hover bg-noir-800">
-                <Image src="/images/food/stew-plate.jpg" alt="African stew at Major Chow" fill className="object-cover" sizes="25vw" />
+                <Image src="/images/gallery/lounge-billiards.jpg" alt="Billiards and cocktails at Crush Cafe" fill className="object-cover" sizes="25vw" />
               </div>
               <div className="relative aspect-square img-hover bg-noir-800 col-span-2">
-                <Image src="/images/food/banner-dishes.jpg" alt="Chow Now Worry Later — Major Chow dishes" fill className="object-cover object-center" sizes="50vw" />
+                <Image src="/images/gallery/daytime-interior.jpg" alt="Crush Cafe daytime dining" fill className="object-cover object-center" sizes="50vw" />
               </div>
             </div>
           </div>

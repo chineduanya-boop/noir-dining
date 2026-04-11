@@ -56,29 +56,21 @@ export function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              {/* Globe icon SVG — simplified version of Major Chow logo */}
+              {/* Crush Cafe logo mark */}
               <div className="w-9 h-9 lg:w-11 lg:h-11 flex-shrink-0">
                 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                  <circle cx="50" cy="50" r="46" stroke="#C9A96E" strokeWidth="3" fill="none"/>
-                  <ellipse cx="50" cy="50" rx="24" ry="46" stroke="#C9A96E" strokeWidth="2" fill="none"/>
-                  <line x1="8" y1="50" x2="92" y2="50" stroke="#C9A96E" strokeWidth="2"/>
-                  <line x1="18" y1="28" x2="82" y2="28" stroke="#C9A96E" strokeWidth="1.5"/>
-                  <line x1="18" y1="72" x2="82" y2="72" stroke="#C9A96E" strokeWidth="1.5"/>
-                  {/* Person dining */}
-                  <circle cx="50" cy="38" r="5" fill="#C9A96E"/>
-                  <path d="M42 55 Q50 48 58 55" stroke="#C9A96E" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-                  <line x1="50" y1="43" x2="50" y2="55" stroke="#C9A96E" strokeWidth="2.5" strokeLinecap="round"/>
-                  <line x1="44" y1="60" x2="56" y2="60" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round"/>
-                  <line x1="44" y1="60" x2="42" y2="70" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round"/>
-                  <line x1="56" y1="60" x2="58" y2="70" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round"/>
+                  <circle cx="50" cy="50" r="46" fill="#e8632a" opacity="0.15"/>
+                  <circle cx="50" cy="50" r="46" stroke="#e8632a" strokeWidth="2.5" fill="none"/>
+                  <path d="M72 32 C72 32 60 22 45 22 C28 22 16 34 16 50 C16 66 28 78 45 78 C60 78 72 68 72 68" stroke="#e8632a" strokeWidth="5" fill="none" strokeLinecap="round"/>
+                  <circle cx="72" cy="50" r="8" fill="#e8632a"/>
                 </svg>
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-display text-xl lg:text-2xl font-light tracking-[0.08em] text-cream-100 group-hover:text-gold-500 transition-colors duration-300">
-                  MAJOR CHOW
+                  CRUSH CAFE
                 </span>
                 <span className="font-body text-[0.58rem] tracking-[0.28em] text-gold-600 uppercase mt-0.5">
-                  Restaurant
+                  Bar · Restaurant · Fine Dining
                 </span>
               </div>
             </Link>
@@ -185,7 +177,7 @@ export function Header() {
           </div>
           <div className="gold-line w-24 mt-4 opacity-60" />
           <p className="overline text-[0.58rem] text-stone-warm tracking-[0.3em]">
-            Eat Healthy · Live Healthy
+            Bar · Restaurant · Fine Dining
           </p>
         </div>
       </div>

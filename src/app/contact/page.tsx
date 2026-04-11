@@ -27,7 +27,7 @@ export default function ContactPage() {
         {/* Hero */}
         <div className="relative bg-noir-800 py-20 px-6 text-center overflow-hidden">
           <div className="absolute inset-0">
-            <Image src="/images/brand/logo-sign.jpg" alt="Major Chow" fill className="object-cover opacity-20" sizes="100vw" />
+            <Image src="/images/gallery/exterior.jpg" alt="Crush Cafe Abuja" fill className="object-cover opacity-20" sizes="100vw" />
             <div className="absolute inset-0 bg-gradient-to-b from-noir-900/80 to-noir-950/95" />
           </div>
           <div className="relative z-10 max-w-2xl mx-auto">
@@ -47,9 +47,9 @@ export default function ContactPage() {
             <div className="gold-line w-16 mb-8" />
             <div className="space-y-7">
               {[
-                { icon: <MapPin size={18} strokeWidth={1.5} className="text-gold-500 flex-shrink-0 mt-0.5" />, label: "Address", content: <p className="font-body text-sm text-stone-light">Major Chow Restaurant<br />Your City, Nigeria</p> },
+                { icon: <MapPin size={18} strokeWidth={1.5} className="text-gold-500 flex-shrink-0 mt-0.5" />, label: "Address", content: <p className="font-body text-sm text-stone-light">Crush Cafe<br />Abuja, Nigeria</p> },
                 { icon: <Phone size={18} strokeWidth={1.5} className="text-gold-500 flex-shrink-0 mt-0.5" />, label: "Phone", content: <a href="tel:+2340000000000" className="font-body text-sm text-stone-light hover:text-gold-500 transition-colors">+234 000 000 0000</a> },
-                { icon: <Mail size={18} strokeWidth={1.5} className="text-gold-500 flex-shrink-0 mt-0.5" />, label: "Email", content: <a href="mailto:hello@majorchow.com" className="font-body text-sm text-stone-light hover:text-gold-500 transition-colors">hello@majorchow.com</a> },
+                { icon: <Mail size={18} strokeWidth={1.5} className="text-gold-500 flex-shrink-0 mt-0.5" />, label: "Email", content: <a href="mailto:hello@crushcafe.ng" className="font-body text-sm text-stone-light hover:text-gold-500 transition-colors">hello@crushcafe.ng</a> },
                 {
                   icon: <Clock size={18} strokeWidth={1.5} className="text-gold-500 flex-shrink-0 mt-0.5" />,
                   label: "Opening Hours",
@@ -77,9 +77,9 @@ export default function ContactPage() {
             <div className="mt-10">
               <p className="overline mb-4">Follow Us</p>
               <div className="flex gap-6">
-                <a href="https://instagram.com/majorchow" target="_blank" rel="noopener noreferrer"
+                <a href="https://instagram.com/crushcafeabuja" target="_blank" rel="noopener noreferrer"
                   className="font-body text-sm text-stone-light hover:text-gold-500 transition-colors hover-underline">
-                  Instagram @majorchow
+                  Instagram @crushcafeabuja
                 </a>
                 <a href="#" className="font-body text-sm text-stone-light hover:text-gold-500 transition-colors hover-underline">
                   Facebook
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
             {/* Map placeholder */}
             <div className="mt-10 relative aspect-video bg-noir-800 border border-cream-100/8 flex items-center justify-center overflow-hidden">
-              <Image src="/images/brand/logo-sign.jpg" alt="Major Chow location" fill className="object-cover opacity-25" sizes="50vw" />
+              <Image src="/images/gallery/exterior.jpg" alt="Crush Cafe location" fill className="object-cover opacity-25" sizes="50vw" />
               <div className="relative z-10 text-center">
                 <MapPin size={24} className="text-gold-500 mx-auto mb-2" />
                 <p className="font-body text-xs text-stone-light mb-3">Major Chow Restaurant</p>
